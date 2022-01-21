@@ -1,38 +1,24 @@
 .App {
   text-align: center;
+  max-width: 512px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item {
+  position: relative;
+  border: 1px solid red;
+  height: 100px;
+  vertical-align: top;
+  width: 100% !important;
+  /* flex: 0 0 25%; */
+  /* max-width: 25%; */
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ReactVirtualized__List {
+  /* border: 5px solid orange !important; */
 }
